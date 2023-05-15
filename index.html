@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Dropdown Menu</title>
+  <style>
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <button onclick="toggleDropdown()">Employee</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">Employee 1</a>
+      <a href="#">Employee 2</a>
+      <a href="#">Employee 3</a>
+    </div>
+  </div>
+
+
+
+    <label for="join-date">Date of Joining:</label>
+    <input type="date" id="join-date" name="join-date">
+
+  
+
+
+
+
+  <script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById("myDropdown");
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      } else {
+        dropdown.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
+
